@@ -221,7 +221,7 @@ loyald tx gov vote 1 yes --from $LYL_WALLET --chain-id=$LYL_ID
 - Delegasi stake
 
 ```
-nibid tx staking delegate $LYL_VALOPER_ADDRESS 10000000unibi --from=$WALLET --chain-id=$NIBIRU_CHAIN_ID --gas=auto
+loyald tx staking delegate $LYL_VALOPER_ADDRESS 10000000ulyl --from=$LYL_WALLET --chain-id=$LYL_ID --gas=auto --fees 250ulyl
 ```
 
 - Mendelegasikan ulang dari validator ke validator lain
