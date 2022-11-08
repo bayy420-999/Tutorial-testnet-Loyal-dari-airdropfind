@@ -171,6 +171,12 @@ loyald status 2>&1 | jq .ValidatorInfo
 loyald status 2>&1 | jq .SyncInfo
 ```
 
+- Cek jumlah blok saat ini
+
+```
+curl -s https://api-t.loyal.nodestake.top/cosmos/base/tendermint/v1beta1/blocks/latest | echo "Current block height: $(jq .block.header.height)"
+```
+
 ### Operasi dompet
 
 - Buat dompet
